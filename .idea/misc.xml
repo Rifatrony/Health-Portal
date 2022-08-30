@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Health-Portal/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Health-Portal/app/src/main/res/layout/activity_sign_up.xml" value="0.20416666666666666" />
+        <entry key="..\:/Health-Portal/app/src/main/res/layout/ambulance_layout.xml" value="0.203125" />
+        <entry key="..\:/Health-Portal/app/src/main/res/layout/diagnostic_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Health-Portal/app/src/main/res/layout/disease_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Health-Portal/app/src/main/res/layout/pharmacy_category_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/HealthPortal/app/src/main/res/layout/activity_category.xml" value="0.20416666666666666" />
         <entry key="..\:/HealthPortal/app/src/main/res/layout/activity_categorydetails.xml" value="0.20416666666666666" />
         <entry key="..\:/HealthPortal/app/src/main/res/layout/activity_details.xml" value="0.20416666666666666" />

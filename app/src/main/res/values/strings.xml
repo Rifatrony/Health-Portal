@@ -79,5 +79,61 @@
 
     <string name="pt1">9 AM - 11 PM</string>
 
+    <string name="d1">Allergies</string>
+    <string name="d2">Cold and Flu</string>
+    <string name="d3">Conjunctivitis (“pink eye“)</string>
+    <string name="d4">Diarrhea</string>
+    <string name="d5">Headaches</string>
+    <string name="d6">Mononucleosis</string>
+    <string name="d7">Stomach Aches</string>
+
+    <string name="dc1">People with allergies have especially sensitive immune systems that react when they contact allergens. Common allergens include: foods (nuts, eggs, milk, soy, shellfish, wheat) pollen mold latex pet dander</string>
+    <string name="dc2">Both of these illnesses are upper respiratory infections, meaning they involve your nose, throat, and lungs. Viruses cause both colds and flu by increasing inflammation of the membranes in the nose and throat.
+
+Most transmission of these viruses occurs via hand-to-hand contact.</string>
+    <string name="dc3"></string>
+    <string name="dc4"></string>
+    <string name="dc5"></string>
+    <string name="dc6"></string>
+    <string name="dc7"></string>
+
+
+    <string name="ds1">Because there are so many possible causes, the symptoms of allergies vary widely. Airborne allergens, like pollen and pet dander, are likely to cause: Eye irritation Runny nose Stuffy nose Puffy, watery eyes Sneezing Inflamed, itchy nose and throat</string>
+    <string name="ds2">Flu symptoms come on suddenly and affect the body all over. Flu symptoms are usually more serious than a cold and include:
+
+fever (100° F),
+headache,
+more intense pain and fatigue, and
+more severe, often dry cough.
+When you get the flu, you are also more prone to bronchitis, sinus, and ear infections.
+
+Cold symptoms mostly affect above the neck and include:
+
+a runny or stuffy nose (nasal congestion),
+sneezing,
+sore throat, and
+cough.
+You may also experience a mild headache, body aches or a low grade fever. Typically, a cold lasts 2-14 days.</string>
+    <string name="ds3"></string>
+    <string name="ds4"></string>
+    <string name="ds5"></string>
+    <string name="ds6"></string>
+    <string name="ds7"></string>
+
+
+    <string name="dt1">The easiest and most effective way to treat allergies is to get rid of or avoid the cause. Where unavoidable, some lifestyle changes can reduce your allergy symptoms. For example, if you are allergic to dust mites, make an effort to keep your room clean and free of dust by frequent vacuuming, dusting, and washing of bedding. For pollen allergies, avoid being outside when pollen counts are high and keep the windows to your room shut.</string>
+    <string name="dt2">If any problem is causing you discomfort, you should seek medical care.
+
+Seek medical attention promptly if you have:
+
+a fever of 102° F or greater (which may indicate a more serious infection),
+a persisting cough, especially with a significant fever (which could indicate pneumonia),
+a persistent sore throat (especially if runny nose does not develop - which could indicate a strep infection), or
+any cold lasting more than 10 days.</string>
+    <string name="dt3"></string>
+    <string name="dt4"></string>
+    <string name="dt5"></string>
+    <string name="dt6"></string>
+    <string name="dt7"></string>
 
 </resources>

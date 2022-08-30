@@ -10,10 +10,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.binaryit.healthportal.Adapter.AmbulanceAdapter;
+import com.binaryit.healthportal.Adapter.DiagnosticAdapter;
 import com.binaryit.healthportal.Adapter.DiseaseAdapter;
 import com.binaryit.healthportal.Adapter.SpecialistAdapter;
 import com.binaryit.healthportal.Adapter.HospitalAdapter;
 import com.binaryit.healthportal.Adapter.PharmacyAdapter;
+import com.binaryit.healthportal.Model.AmbulanceModel;
+import com.binaryit.healthportal.Model.DiagnosticModel;
 import com.binaryit.healthportal.Model.DiseaseModel;
 import com.binaryit.healthportal.Model.SpecialistModel;
 import com.binaryit.healthportal.Model.HospitalModel;
@@ -43,6 +47,12 @@ public class CategoryDetailsActivity extends AppCompatActivity {
     HospitalAdapter hospitalAdapter;
     List<HospitalModel> hospitalModelList;
 
+    DiagnosticAdapter diagnosticAdapter;
+    List<DiagnosticModel> diagnosticModelList;
+
+    AmbulanceAdapter ambulanceAdapter;
+    List<AmbulanceModel> ambulanceModelList;
+
 
 
     @SuppressLint("SetTextI18n")
@@ -67,51 +77,48 @@ public class CategoryDetailsActivity extends AppCompatActivity {
         pharmacyModelList = new ArrayList<>();
         diseaseModelList = new ArrayList<>();
         hospitalModelList = new ArrayList<>();
+        diagnosticModelList = new ArrayList<>();
+        ambulanceModelList = new ArrayList<>();
 
         if (title.equals("Doctor")){
 
             titleTextView.setText("Specialist On");
 
             doctorCategoryModelList.add(new SpecialistModel("Anesthesiology & Pain Specialist", R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Burn & Plastic Specialist", R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Cardiology Specialist", R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Cancer Specialist", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Burn & Plastic Specialist",  R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Cardiology Specialist",  R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Cancer specialist", R.drawable.dd));
 
+            doctorCategoryModelList.add(new SpecialistModel("Cardiovascular and Thoracic", R.drawable.dd));
 
-            /*doctorCategoryModelList.add(new SpecialistModel("Anesthesiology & Pain Specialist", getString(R.string.text1), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Burn & Plastic Specialist", getString(R.string.text1), R.drawable.hospital2));
-            doctorCategoryModelList.add(new SpecialistModel("Cardiology Specialist", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Cancer specialist", getString(R.string.text3), R.drawable.p1));
-            doctorCategoryModelList.add(new SpecialistModel("Cardiovascular and Thoracic", getString(R.string.text4), R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Colorectal Surgery", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Dental",  R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Dermatology", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Diabetes",  R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("EYE", R.drawable.dd));
 
-            doctorCategoryModelList.add(new SpecialistModel("Colorectal Surgery", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Dental", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Dermatology", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Diabetes", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("EYE", getString(R.string.text2), R.drawable.dd));
-
-            doctorCategoryModelList.add(new SpecialistModel("ENT, Head, Neck", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("General Surgery", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Gynecology & Obs", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Gastroenterology", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Hair transplant", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Hepatology (Liver, Gallbladder)", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Infertility", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Medicine", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Nephrology", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Neuromedicine", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Neuro Surgery", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Nutritionist and Diet", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Orthopedics", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Pediatric", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Physiotherapy", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Pediatric Cardiology", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Pediatric Surgery", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Psychology", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Rheumatology", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Respiratory", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Sports Medicine", getString(R.string.text2), R.drawable.dd));
-            doctorCategoryModelList.add(new SpecialistModel("Urology", getString(R.string.text2), R.drawable.dd));*/
+            doctorCategoryModelList.add(new SpecialistModel("ENT, Head, Neck", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("General Surgery", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Gynecology & Obs", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Gastroenterology", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Hair transplant",  R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Hepatology (Liver, Gallbladder)", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Infertility", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Medicine", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Nephrology", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Neuromedicine", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Neuro Surgery", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Nutritionist and Diet", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Orthopedics", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Pediatric", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Physiotherapy", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Pediatric Cardiology", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Pediatric Surgery", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Psychology", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Rheumatology", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Respiratory", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Sports Medicine", R.drawable.dd));
+            doctorCategoryModelList.add(new SpecialistModel("Urology", R.drawable.dd));
             doctorCategoryAdapter = new SpecialistAdapter(this, doctorCategoryModelList);
 
             categoryRecyclerView.setAdapter(doctorCategoryAdapter);
@@ -139,11 +146,12 @@ public class CategoryDetailsActivity extends AppCompatActivity {
 
             titleTextView.setText(title + " Category");
 
-            diseaseModelList.add(new DiseaseModel("Disease", R.drawable.dd));
-            diseaseModelList.add(new DiseaseModel("Disease", R.drawable.disease));
-            diseaseModelList.add(new DiseaseModel("Disease", R.drawable.hospital2));
-            diseaseModelList.add(new DiseaseModel("Disease", R.drawable.disease));
-            diseaseModelList.add(new DiseaseModel("Disease", R.drawable.disease));
+            diseaseModelList.add(new DiseaseModel(getString(R.string.d1), getString(R.string.dc1), getString(R.string.ds1), getString(R.string.dt1), R.drawable.disease));
+            diseaseModelList.add(new DiseaseModel(getString(R.string.d2), getString(R.string.dc2), getString(R.string.ds2), getString(R.string.dt2), R.drawable.disease));
+           /* diseaseModelList.add(new DiseaseModel("Cold and Flu", R.drawable.disease));
+            diseaseModelList.add(new DiseaseModel("Conjunctivitis (“pink eye“)", R.drawable.disease));
+            diseaseModelList.add(new DiseaseModel("Diarrhea", R.drawable.disease));
+            diseaseModelList.add(new DiseaseModel("Headaches", R.drawable.disease));*/
 
             diseaseAdapter = new DiseaseAdapter(this, diseaseModelList);
             categoryRecyclerView.setAdapter(diseaseAdapter);
@@ -167,6 +175,26 @@ public class CategoryDetailsActivity extends AppCompatActivity {
 
             hospitalAdapter = new HospitalAdapter(this, hospitalModelList);
             categoryRecyclerView.setAdapter(hospitalAdapter);
+        }
+
+        if (title.equals("Diagnostic Center")){
+            titleTextView.setText(title + " List");
+            diagnosticModelList.add(new DiagnosticModel("Diagnostic","Diagnostic","Diagnostic","123456789", R.drawable.diagnostic));
+
+            diagnosticAdapter = new DiagnosticAdapter(this, diagnosticModelList);
+            categoryRecyclerView.setAdapter(diagnosticAdapter);
+
+        }
+
+        if (title.equals("Ambulance")){
+            titleTextView.setText(title + " List");
+
+            ambulanceModelList.add(new AmbulanceModel("Ambulance Service Bangladesh", "24 Hours open", "ICU Ambulance, CCU Ambulance, AC Ambulance, Freezing Ambulance", "Full Bangladesh", "01234567894", R.drawable.ambulance));
+            ambulanceModelList.add(new AmbulanceModel("24 Ambulance Service in Dhaka", "24 Hours open", "এসি এ্যাম্বুলেন্স সার্ভিস, নন-এসি এ্যাম্বুলেন্স সার্ভিস, লাশবাহী ফ্রিজার এ্যাম্বুলেন্স, লাইফ সাপোর্ট এ্যাম্বুলেন্স, হাই এইচ এ্যাম্বুলেন্স সার্ভিস", "Full Bangladesh", " 01911125156", R.drawable.ambulance));
+
+            ambulanceAdapter = new AmbulanceAdapter(this, ambulanceModelList);
+            categoryRecyclerView.setAdapter(ambulanceAdapter);
+
         }
     }
 

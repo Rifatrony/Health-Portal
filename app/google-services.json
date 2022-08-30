@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1018105435047",
+    "project_id": "health-portal-efd00",
+    "storage_bucket": "health-portal-efd00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018105435047:android:91bf667a4c914b08eb5c82",
+        "android_client_info": {
+          "package_name": "com.binaryit.healthportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018105435047-2m6u0ht0oh8pnlcrqi54mqc3m3jk5cjg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdsLaePouYLM9k1zhdDJF7q1G3_UnUKsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018105435047-2m6u0ht0oh8pnlcrqi54mqc3m3jk5cjg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

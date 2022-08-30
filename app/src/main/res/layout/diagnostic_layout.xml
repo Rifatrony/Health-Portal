@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soup.neumorphism.NeumorphCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource"
+    app:neumorph_backgroundColor="@color/background"
+    app:neumorph_shadowColorDark="@color/dark_shadow"
+    app:neumorph_shadowColorLight="@color/light_shadow"
+    app:neumorph_shadowElevation="5dp"
+    app:neumorph_shapeType="basin"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="10dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/dark_shadow"
+                />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pharmacy"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expandedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detailsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="8dp"
+                android:textSize="16sp"
+                android:text="10 AM - 10PM"
+                android:textColor="@color/primary"
+                android:textStyle="bold|italic"
+                />
+
+            <TextView
+                android:id="@+id/locationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dhaka"
+                android:paddingStart="16dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/numberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="017"
+                android:paddingStart="16dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="16dp"
+                android:textColor="@color/black"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</soup.neumorphism.NeumorphCardView>

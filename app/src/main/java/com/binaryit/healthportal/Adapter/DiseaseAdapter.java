@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -29,15 +30,20 @@ public class DiseaseAdapter extends RecyclerView.Adapter<DiseaseAdapter.DiseaseV
     @NonNull
     @Override
     public DiseaseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.category_layout, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.disease_layout, parent, false);
         return new DiseaseViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull DiseaseViewHolder holder, int position) {
         DiseaseModel data = diseaseModelList.get(position);
-        holder.categoryNameTextView.setText(data.getDiseaseName());
+        holder.nameTextView.setText(data.getDiseaseName());
+        holder.causeTextView.setText(data.getCauses());
+        holder.symptomsTextView.setText(data.getSymptoms());
+        holder.treatmentTextView.setText(data.getTreatment());
         Glide.with(context).load(data.getImage()).into(holder.imageView);
+        boolean isVisible = data.isVisibility();
+        holder.expandedLayout.setVisibility(isVisible ? View.VISIBLE : View.GONE);
     }
 
     @Override
@@ -47,13 +53,29 @@ public class DiseaseAdapter extends RecyclerView.Adapter<DiseaseAdapter.DiseaseV
 
     public class DiseaseViewHolder extends RecyclerView.ViewHolder {
 
-        TextView categoryNameTextView;
+        TextView nameTextView, causeTextView, symptomsTextView, treatmentTextView;
         ImageView imageView;
+        LinearLayout expandedLayout;
 
         public DiseaseViewHolder(@NonNull View itemView) {
             super(itemView);
-            categoryNameTextView = itemView.findViewById(R.id.categoryNameTextView);
+            nameTextView = itemView.findViewById(R.id.nameTextView);
+            causeTextView = itemView.findViewById(R.id.causeTextView);
+            symptomsTextView = itemView.findViewById(R.id.symptomsTextView);
+            treatmentTextView = itemView.findViewById(R.id.treatmentTextView);
             imageView = itemView.findViewById(R.id.imageView);
+            expandedLayout = itemView.findViewById(R.id.expandedLayout);
+
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    DiseaseModel diseaseModel = diseaseModelList.get(getAdapterPosition());
+                    diseaseModel.setVisibility(!diseaseModel.isVisibility());
+                    notifyItemChanged(getAdapterPosition());
+                }
+            });
+
         }
     }
 
