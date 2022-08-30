@@ -106,6 +106,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     loginButton.setVisibility(View.VISIBLE);
                     Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), CategoryActivity.class));
+                    finish();
                 }
                 else {
                     progressBar.setVisibility(View.GONE);

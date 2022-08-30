@@ -128,14 +128,14 @@ public class CategoryDetailsActivity extends AppCompatActivity {
 
             titleTextView.setText(title + " List");
 
-            pharmacyModelList.add(new PharmacyModel(getString(R.string.p1), getString(R.string.pt1),getString(R.string.pa1),getString(R.string.pn1), R.drawable.p1));
-            pharmacyModelList.add(new PharmacyModel(getString(R.string.p2), getString(R.string.pt1),getString(R.string.pa2),getString(R.string.pn2), R.drawable.p1));
-            pharmacyModelList.add(new PharmacyModel(getString(R.string.p3), getString(R.string.pt1),getString(R.string.pa3),getString(R.string.pn3), R.drawable.p1));
-            pharmacyModelList.add(new PharmacyModel(getString(R.string.p4), getString(R.string.pt1),getString(R.string.pa4),getString(R.string.pn4), R.drawable.p1));
-            pharmacyModelList.add(new PharmacyModel(getString(R.string.p5), getString(R.string.pt1),getString(R.string.pa5),getString(R.string.pn5), R.drawable.p1));
-            pharmacyModelList.add(new PharmacyModel(getString(R.string.p6), getString(R.string.pt1),getString(R.string.pa6),getString(R.string.pn6), R.drawable.p1));
-            pharmacyModelList.add(new PharmacyModel(getString(R.string.p7), getString(R.string.pt1),getString(R.string.pa7),getString(R.string.pn7), R.drawable.p1));
-            pharmacyModelList.add(new PharmacyModel(getString(R.string.p8), getString(R.string.pt1),getString(R.string.pa8),getString(R.string.pn8), R.drawable.p1));
+            pharmacyModelList.add(new PharmacyModel(getString(R.string.p1), getString(R.string.pt1),getString(R.string.pa1),getString(R.string.pn1), R.drawable.drugs));
+            pharmacyModelList.add(new PharmacyModel(getString(R.string.p2), getString(R.string.pt1),getString(R.string.pa2),getString(R.string.pn2), R.drawable.drugs));
+            pharmacyModelList.add(new PharmacyModel(getString(R.string.p3), getString(R.string.pt1),getString(R.string.pa3),getString(R.string.pn3), R.drawable.drugs));
+            pharmacyModelList.add(new PharmacyModel(getString(R.string.p4), getString(R.string.pt1),getString(R.string.pa4),getString(R.string.pn4), R.drawable.drugs));
+            pharmacyModelList.add(new PharmacyModel(getString(R.string.p5), getString(R.string.pt1),getString(R.string.pa5),getString(R.string.pn5), R.drawable.drugs));
+            pharmacyModelList.add(new PharmacyModel(getString(R.string.p6), getString(R.string.pt1),getString(R.string.pa6),getString(R.string.pn6), R.drawable.drugs));
+            pharmacyModelList.add(new PharmacyModel(getString(R.string.p7), getString(R.string.pt1),getString(R.string.pa7),getString(R.string.pn7), R.drawable.drugs));
+            pharmacyModelList.add(new PharmacyModel(getString(R.string.p8), getString(R.string.pt1),getString(R.string.pa8),getString(R.string.pn8), R.drawable.drugs));
 
 
             pharmacyAdapter = new PharmacyAdapter(this, pharmacyModelList);
@@ -179,7 +179,8 @@ public class CategoryDetailsActivity extends AppCompatActivity {
 
         if (title.equals("Diagnostic Center")){
             titleTextView.setText(title + " List");
-            diagnosticModelList.add(new DiagnosticModel("Diagnostic","Diagnostic","Diagnostic","123456789", R.drawable.diagnostic));
+            diagnosticModelList.add(new DiagnosticModel("Saleha Diagnostic Centre","Saleha Diagnostic Centre is very well known pathology centre in Dhaka. X-Ray, ECG, Ultrasound and all kind of Hormonal test is available here. The owner of Saleha Diagnostic Centre is 'Mohammad Moniruzzaman Milton' . He is also the 'Admin Director' here. Saleha Diagnostic Centre is most reliable pathological lab as Google and Facebook review.Our Honorable Founder is 'Mohammad Moniruzzaman Milton'. Infertility treatment is one of the best service here.","Sanarpar, Demra, Dhaka. Sarulia.. P.C. 1361, Demra, Dhaka.","8801913774554", R.drawable.diagnostic));
+            diagnosticModelList.add(new DiagnosticModel("Anwara Medical Services","Our main activities are treatment and health. This center is a highly specialized center for cancer diagnosis and most advanced investigations in the feild of cancer diagnosis and treatment.Refer to our website to know more about us.","House No 22A, Road No 2. New Market.. P.C. 1205, Dhanmondi, Dhaka.","01971-534318", R.drawable.diagnostic));
 
             diagnosticAdapter = new DiagnosticAdapter(this, diagnosticModelList);
             categoryRecyclerView.setAdapter(diagnosticAdapter);

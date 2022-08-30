@@ -1,5 +1,6 @@
 package com.binaryit.healthportal.Adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.LabeledIntent;
 import android.view.LayoutInflater;
@@ -39,13 +40,14 @@ public class DiagnosticAdapter extends RecyclerView.Adapter<DiagnosticAdapter.Di
         return new DiagnosticViewHolder(view);
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void onBindViewHolder(@NonNull DiagnosticViewHolder holder, int position) {
         DiagnosticModel diagnosticModel = diagnosticModelList.get(position);
         holder.nameTextView.setText(diagnosticModel.getName());
-        holder.detailsTextView.setText(diagnosticModel.getDetails());
-        holder.locationTextView.setText(diagnosticModel.getLocation());
-        holder.numberTextView.setText(diagnosticModel.getNumber());
+        holder.detailsTextView.setText("About us: \n"+diagnosticModel.getDetails());
+        holder.locationTextView.setText("Address:\n"+diagnosticModel.getLocation());
+        holder.numberTextView.setText("Contact:\n"+diagnosticModel.getNumber());
         Glide.with(context).load(diagnosticModel.getImage()).into(holder.imageView);
 
         boolean isVisible = diagnosticModel.isVisibility();

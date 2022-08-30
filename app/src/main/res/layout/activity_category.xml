@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
-        android:text="Category"
+        android:text="Dashboard"
         android:gravity="center"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -282,7 +282,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/p1"
+                        android:src="@drawable/drugs"
                         android:padding="10dp"
                         app:civ_border_width="1dp"
                         app:civ_border_color="@color/dark_shadow"

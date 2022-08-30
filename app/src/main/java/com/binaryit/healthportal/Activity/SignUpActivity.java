@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +30,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     EditText nameEditText, numberEditText, emailEditText, passwordEditText;
     TextView haveAccountTextView;
     NeumorphButton signUpButton;
+    ProgressBar progressBar;
 
     String email, password, name, number;
     FirebaseAuth mAuth;
@@ -54,6 +56,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         passwordEditText = findViewById(R.id.passwordEditText);
         haveAccountTextView = findViewById(R.id.haveAccountTextView);
         signUpButton = findViewById(R.id.signUpButton);
+        progressBar = findViewById(R.id.progressBar);
     }
 
     private void setListener() {
@@ -113,11 +116,20 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     private void SignUpUser() {
 
+        progressBar.setVisibility(View.VISIBLE);
+        signUpButton.setVisibility(View.GONE);
+
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
                     Toast.makeText(SignUpActivity.this, "Sign Up Successfully", Toast.LENGTH_SHORT).show();
+
+                    startActivity(new Intent(getApplicationContext(), CategoryActivity.class));
+                    finish();
+
+                    progressBar.setVisibility(View.GONE);
+                    signUpButton.setVisibility(View.VISIBLE);
 
                     nameEditText.setText("");
                     numberEditText.setText("");
@@ -134,7 +146,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                         @Override
                         public void onComplete(@NonNull Task task) {
                             if (task.isSuccessful()){
-                                Toast.makeText(SignUpActivity.this, "Data Inserted", Toast.LENGTH_SHORT).show();
+
                             }
                             else {
                                 Toast.makeText(SignUpActivity.this, task.getException().toString(), Toast.LENGTH_SHORT).show();

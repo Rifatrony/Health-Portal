@@ -65,7 +65,7 @@
                 android:paddingBottom="8dp"
                 android:textSize="16sp"
                 android:text="10 AM - 10PM"
-                android:textColor="@color/primary"
+                android:textColor="@color/green"
                 android:textStyle="bold|italic"
                 />
 

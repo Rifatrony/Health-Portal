@@ -40,7 +40,7 @@ public class PharmacyAdapter extends RecyclerView.Adapter<PharmacyAdapter.Pharma
     public void onBindViewHolder(@NonNull PharmacyViewHolder holder, int position) {
         PharmacyModel data = pharmacyModelList.get(position);
         holder.nameTextView.setText(data.getPharmacyName());
-        holder.timeTextView.setText("Open at: "+data.getTime());
+        holder.timeTextView.setText("Open : "+data.getTime());
         holder.addressTextView.setText("Address: "+data.getAddress());
         holder.numberTextView.setText("Contact: "+data.getNumber());
         Glide.with(context).load(data.getImage()).into(holder.imageView);
