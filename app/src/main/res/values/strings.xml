@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Health Portal</string>
+
+
+    <string name="text">Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="text1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English.</string>
+    <string name="text2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly believable.</string>
+    <string name="text3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</string>
+    <string name="text4">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</string>
+
+
+    <string name="h1">SQUARE HOSPITAL</string>
+    <string name="h2">Bangabandhu Sheikh Mujib Medical University (BSMMU) / (PG)</string>
+    <string name="h3">EVERCARE HOSPITAL DHAKA</string>
+    <string name="h4">DHAKA MEDICAL COLLEGE</string>
+    <string name="h5">UNITED HOSPITAL LIMITED</string>
+    <string name="h6">LABAID SPECIALIZED HOSPITAL</string>
+    <string name="h7">KURMITOLA GENERAL HOSPITAL</string>
+    <string name="h8">KURMITOLA GENERAL HOSPITAL</string>
+    <string name="h9">GREEN LIFE MEDICAL COLLEGE HOSPITAL</string>
+    <string name="h10">NATIONAL HEART FOUNDATION</string>
+
+    <string name="h1details">The Square Hospital is located in the heart of Dhaka. It’s absolutely a private hospital in Dhaka. Moreover, it serves patients with additional facilities. Its 3 multi-storied decorated buildings with a 500 beds care unit. Square Hospital establishment date is on 16 December in 2006 at Panthapath Dhaka. This hospital is incredibly popular for its affordable modern facilities. This hospital has international and Bangladeshi experts and qualified doctors. Besides, medical equipment is available. Including modern diagnosis becomes comfortable here.</string>
+    <string name="h2details">The location of Bangabandhu Sheikh Mujib Medical University (BSMMU) in Dhaka is Shahbagh. Established: it 1965 Many specialized treatment centres are available at BSMMU. The only medical university in Bangladesh is Bangabandhu Sheikh Mujib Medical University. The largest pediatric haematology centre in Bangladesh is at (BSMMU). Specifically, for the treatment of cancer-affected children. There is also an oncology department there.</string>
+    <string name="h3details">Evercare Hospital Dhaka is one of the simplest hospitals in Bangladesh. This Hospital previous name was Apollo hospital. Established in2005. In 2020, the hospital was retitled Evercare Hospital Dhaka. Its location is at Bashundhara territorial dominion in Dhaka city. This hospital has 450 beds and renowned health workers. Several operation theatres and paramedic staff are always available. People come from cities, villages to need high-class treatment. Evercare may be a healthcare platform operating across Africa and Asia. It provides a world-class treatment facility.</string>
+    <string name="h4details">Dhaka Medical College is one of the oldest hospitals in Bangladesh. Through the British passé, this hospital establishment date was in 1946. Currently, it provides treatment for specialized problems. Commonly, its name is DMCH. This can be a public medical college hospital. It’s the foremost popular and prestigious medical college. Moreover, one of the biggest health care hospitals in Dhaka. This reputed hospital is well-known. This school pioneered nearly every extraordinary medical achievement. Bangladesh first auto logous bone transplant began in its transplant unit. It is especially known for its Burn and cosmetic surgery Unit.</string>
+    <string name="h5details">United Hospital is the topmost private hospital in Bangladesh. This Hospital inauguration happened in 2006. It’s the name of a high-category hospital. Generally, United Hospital is also acquainted with Continental Hospital. This hospital contains a multidisciplinary 500-bed capacity. Moreover, they supply a whole and one-stop healthcare solution to the people. This hospital is one of the highest hospitals in Bangladesh. Currently, the hospital has Cardiology, Cardiac Surgery, and an orthopedic department. Also, it is Gynecology and Obstetrics, Neonatology and Pediatrics department.</string>
+    <string name="h6details">Labaid may be a popular name within the Bangladesh healthcare industry. This Hospital Established: 2004. This Hospital serves cardiac treatment. The doctors are professionals in doctoring cardiac health issues. Moreover, it is one of the very famous hospitals in Dhaka. LABAID Specialized Hospital has formed a more revolution in cardiac treatment in Bangladesh. LABAID Specialized Hospital could be a super-tertiary care hospital in Bangladesh. This hospital provides the most recent surgical and diagnostic facilities. It’s an example of the synergy of medical advances in IT. The proficient technologists and officials of the hospital helped constantly.</string>
+    <string name="h7details">Kurmitola General inaugurated it on 13 May 2012. It has 500 beds for patients. The most objective of this hospital is to produce good medical treatment for all citizens of Bangladesh. Moreover, they supply life-good treatment and emergency services to the road accident victims of the nearby area. Also, they supply "on-the-job training'' to the internees. And that they provide practical training to the cadets of AFMI and AFMC.</string>
+    <string name="h8details">BIRDEM (the Bangladesh Institute of Research and Rehabilitation in Diabetes, Endocrine, and Metabolic Disorders) may be a well-known and famous hospital in Bangladesh. Its location is at Shahbag Square in Dhaka. It’s Established: 1980. BIRDEM General Hospital may be a 600-bed hospital complex. Moreover, a day almost 3,500 patients take treatment from the outside. BIRDEM is serving many diabetes patients. This hospital is the largest in the treatment of diabetes. Besides, its designated as a WHO Cooperating Center on Diabetes. This hospital features a comprehensive health care centre. Its global popularity for its world-class expert staff members. This is often the low price hospital in Bangladesh. They take the very lowest amount of cash from patients for appointments.</string>
+    <string name="h9details">Green Life medical college Hospital could be a non-government hospital. In 2005, they wanted to allow specialized care within the private sector. They named it Green Life Hospital. Later, it became an excellent success. Then in 2009, these physicians decided to form a medical college. They wanted it to be a non-profit, non-government, self-financing project which can serve humanity. They raised Green Life Medical College Hospital complexes in two multistoried fully air-conditioned buildings. It’s approximately 500 beds for patients.</string>
+    <string name="h10details">National Heart Foundation Hospital could be a non-profit hospital. In Bangladesh Established: 1979, but, this foundation released an app for heart patients. In 2018, The govt. The Ministry of Health and Family Welfare gave this award. Moreover, this hospital worked as an “influence on tobacco control". Including a serious role played "for prevention and control of disorder (CVD) in Bangladesh". Besides, the National Heart Foundation encourages people; the way to escape cardiovascular diseases. They take step resuscitation and rehabilitation of patients. Also, they supply indoor and outdoor treatment. Confidently, the National Heart Foundation hospital is the best Heart Foundation Hospital within the Bangladesh hospital-grade list.</string>
+
+
+    <string name="h1location">18/F, Bir Uttam, Qazi Nuruzzaman Sarak, West Panthapath.</string>
+    <string name="h2location">Bangabandhu Sheikh Mujib Medical University, BSMMU, Dhaka 1000.</string>
+    <string name="h3location">Plot: 81, Block: E, Bashundhara R/A, Dhaka 1229, Bangladesh.</string>
+    <string name="h4location"> Dhaka Medical College, Dhaka-1000, Bangladesh.</string>
+    <string name="h5location">Plot 15, Road 71, Gulshan, Dhaka-1212, Bangladesh.</string>
+    <string name="h6location">House-06, Road-04, Dhanmondi, Dhaka-1205, Bangladesh.</string>
+    <string name="h7location">Tongi Diversion Road, Dhaka 1206.</string>
+    <string name="h8location">Shahbag Square, 122 Kazi Nazrul Islam Ave, Dhaka 1000.</string>
+    <string name="h9location">MAK Khan Tower, 31 and 31/1, Bir Uttam K.M. Shafiullah Sarak (Green Road).</string>
+    <string name="h10location">Plot-7/2, Section-2, Mirpur, Dhaka-1216, Bangladesh.</string>
+
+
+    <string name="p1">CARE PHARMACY</string>
+    <string name="p2">HEALTH and HOPE PHRAMA</string>
+    <string name="p3">HEALTH MART</string>
+    <string name="p4">LAZZ PHRAMA LTD</string>
+    <string name="p5">NEW TAZRIN PHARMACY</string>
+    <string name="p6">PHARMACY PLUS</string>
+    <string name="p7">PRESCRIPTION AID</string>
+    <string name="p8">SONAR BANGLA MEDICAL</string>
+
+
+
+    <string name="pa1">House 116, Road 11, Block E, Banani, Dhaka, Bangladesh.</string>
+    <string name="pa2">Sabamoon Tower, 152/1/H Green Road, Panthapath, Dhaka, Bangladesh.</string>
+
+    <string name="pa3">House 67, Road 11, Block E, Banani, Dhaka, Bangladesh.</string>
+
+    <string name="pa4">64/3 Lake Circus, Kalabagan, Mirpur Road, Dhaka, Bangladesh.</string>
+
+    <string name="pa5">64/3 Jobaida Super Market, Lake Circus, Kolabagan, Mirpur Road, Dhaka, Bangladesh.</string>
+    <string name="pa6">House-76/B,Road-11, Banani, Dhaka, Bangladesh.</string>
+    <string name="pa7">House 82, Road 11, Block D, Banani, Dhaka, Bangladesh.</string>
+    <string name="pa8">House 76, Road 11, Banani, Dhaka, Bangladesh.</string>
+
+
+    <string name="pn1">(88-02) 883-6745</string>
+    <string name="pn2"> (88-02) 913-7076, 914-5786</string>
+    <string name="pn3">(88-02) 987-3176, 0171-1138-991</string>
+    <string name="pn4">(88-02) 911-1843</string>
+    <string name="pn5">(88-02) 811-0513, 017-3807-9272</string>
+    <string name="pn6">(88) 0172-096-1115</string>
+    <string name="pn7">(88-02) 985-0999,0192-077-8815</string>
+    <string name="pn8">(88-02) 988-2016, 0174-9422-899</string>
+
+    <string name="pt1">9 AM - 11 PM</string>
+
+
+</resources>
